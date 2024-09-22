@@ -10,6 +10,7 @@ Plataforma de E-Commerce Moderna y Responsiva para Amantes de la Moda
 
 Este proyecto es una tienda virtual de ropa completamente funcional, desarrollada con React, que ofrece una interfaz elegante y fácil de usar para que los clientes puedan explorar, seleccionar y comprar las últimas tendencias de moda. La tienda cuenta con una amplia variedad de prendas organizadas por estilo, género y temporada.
 
+Se hace uso de la api : [FakeStore](https://fakestoreapi.com/products)
 
 ## Características
 
