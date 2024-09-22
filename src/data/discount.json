@@ -1,24 +1,24 @@
 {
 	"discounts": [
 		{
-			"code": "RTKPRO",
-			"value": 15
+			"code": "CUBA",
+			"value": 0.1
 		},
 		{
-			"code": "KHROZ7",
+			"code": "PYTHON",
 			"value": 20
 		},
 		{
-			"code": "BIGSALE",
+			"code": "REACT",
 			"value": 30
 		},
 		{
-			"code": "DEAFRIZAL",
+			"code": "LEMON",
 			"value": 50
 		},
 		{
-			"code": "NEWYEAR",
-			"value": 75
+			"code": "W4LNER",
+			"value": 99
 		}
 	]
 }
