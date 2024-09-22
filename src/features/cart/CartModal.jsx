@@ -76,12 +76,12 @@ function CartModal({ onClose, onCheckout }) {
   const handleCheckout = () => {
     if (selectTotalItemCart === 0) return;
 
-    const phone = '6282314950438';
+    const phone = '5351154951';
     const message = encodeURIComponent(
-      `Halo Admin,\nSaya ingin melakukan checkout untuk pembelian barang-barang berikut:
+      `Hola administrador,\nQuiero realizar el pago para comprar los siguientes artículos:
         ${cartItems?.map(
     (product, index) => `\n[${index + 1}] ${product?.title} (*Qty: ${product?.quantity}*)`,
-  )}\n\nTotal Barang: *${totalItem}*\nSubtotal: *$${numberFormat.formatCurrency(totalPrice)} USD*\n${isDiscountApplied && discountCode !== '' ? `Diskon: *$${numberFormat.formatCurrency(discountAmount)} USD* (${discountValue}%)\n` : ''}Total Pembelian: *$${numberFormat.formatCurrency(totalPriceDiscount)} USD*\n\nMohon bantu konfirmasi ketersediaan stok dan informasi lanjut untuk proses pembayaran. Terima kasih!
+  )}\n\nArtículos totales: *${totalItem}*\nSubtotal: *$${numberFormat.formatCurrency(totalPrice)} USD*\n${isDiscountApplied && discountCode !== '' ? `Descuento: *$${numberFormat.formatCurrency(discountAmount)} USD* (${discountValue}%)\n` : ''}Compra total: *$${numberFormat.formatCurrency(totalPriceDiscount)} USD*\n\nPor favor ayude a confirmar la disponibilidad de stock y más información para el proceso de pago. ¡Gracias!
         `,
     );
     const URL_CHECKOUT = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
@@ -240,7 +240,7 @@ function CartModal({ onClose, onCheckout }) {
               <p className="text-sm mt-1 text-red-700">
                 Coupon code is invalid.
                 {' '}
-                <Link to="https://github.com/roziqinkhoeru/vshop-spa" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                <Link to="https://github.com/w4lner/03-Virtual_Shop" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
                   Get your coupon code
                 </Link>
               </p>

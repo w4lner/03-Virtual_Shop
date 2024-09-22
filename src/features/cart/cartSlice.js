@@ -44,7 +44,7 @@ const initialState = {
 export const cartSlice = createSlice({
   name: 'cart',
   initialState,
-  //   berisi fungsi fungsi untuk memanipulasi state
+
   reducers: {
     addItemToCart: (state, action) => {
       const newItem = action.payload;
@@ -123,7 +123,7 @@ export const cartSlice = createSlice({
   },
 });
 
-// actions ini sebegai kurir untuk mengirim data ke reducer
+
 export const {
   addItemToCart,
   minusItemFromCart,
@@ -135,7 +135,7 @@ export const {
 
 export default cartSlice.reducer;
 
-// selector
+
 export const selectCartItems = (state) => state.cart.cartItems;
 export const selectTotalItemCart = (state) => state.cart.cartItems.reduce((total, item) => total + item.quantity, 0);
 export const selectTotalPrice = (state) => state.cart.cartItems.reduce((total, item) => total + item.totalPrice, 0);

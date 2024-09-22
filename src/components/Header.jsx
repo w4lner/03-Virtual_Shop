@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { selectTotalItemCart } from '../features/cart/cartSlice';
 import { selectTotalWishlistItems } from '../features/wishlist/wishlistSlice';
+import logo from "../assets/img/logo.png"
 
 function Header({ onOpenCart, onOpenWishlist }) {
   const totalCartItem = useSelector(selectTotalItemCart);
@@ -24,17 +25,17 @@ function Header({ onOpenCart, onOpenWishlist }) {
           >
             <figure className="block mr-2">
               <img
-                src="https://vitejs.dev/logo.svg"
-                alt="Vite Logo"
+                src={logo}
+                alt=" Logo"
                 className="h-7 mobile:h-8"
               />
             </figure>
             <span className="text-gray-100 font-bold text-xl hidden mobile:block">
-              VShop
+              Virtual Shop
             </span>
           </Link>
           <h5 className="font-bold text-lg text-gray-100 mobile:hidden">
-            VShop
+            Virtual Shop
           </h5>
           <div className="flex items-center space-x-4.5 mobile:space-x-6">
             <button

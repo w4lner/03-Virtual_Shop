@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Checkout from '../components/Checkout';
-import Filter from '../components/Filter';
-import ProductList from '../features/producList/ProductList';
-import CartModal from '../features/cart/CartModal';
-import WishlistModal from '../features/wishlist/WishlistModal';
-import Footer from '../components/Footer';
+import Header from './components/Header';
+import Checkout from './components/Checkout';
+import Filter from './components/Filter';
+import ProductList from './features/producList/ProductList';
+import CartModal from './features/cart/CartModal';
+import WishlistModal from './features/wishlist/WishlistModal';
+import Footer from './components/Footer';
 
 function Home() {
   const [isOpenModalCart, setIsOpenModalCart] = useState(false);
